@@ -1,0 +1,133 @@
+/* Layout for desktop version */
+
+body {
+}
+
+table th, table td {
+  border: 1px solid #CCCCCC;
+  padding: 3px 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+td.caption {
+  text-align: left;
+  font-weight: bold;
+}
+
+.container {
+padding-top: 10px;
+}
+.blueband {
+background: #cbebff; /* old browsers */
+padding-top:20px;
+}  
+
+.navigation {
+  padding: 35px 0;
+}
+
+.navigation ul {
+  list-style: none;
+}
+.navigation ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+.navigation a {
+  color: #bd0131;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: none;
+}
+
+.navigation a:hover {
+  color: #777;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.copyright {
+  text-align:center;
+  font-size: 10px;
+  border-top: 1px solid gray;
+}
+.copyright a {
+  color: #333;
+  font-weight:normal;
+}
+.copyright a:visited {
+  color: #333;
+}
+
+.dlbutton {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  text-align: center;
+}
+.dlbutton p.next {
+  padding-top: 30px;
+}
+
+.dlbutton a {
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  background: #df1000; /* old browsers */
+  background: -moz-linear-gradient(top, #df1000 0%, #af0000 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#df1000), color-stop(100%,#af0000)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df1000', endColorstr='#af0000',GradientType=0 ); /* ie */
+  zoom: 1;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -box-shadow: 0 1px 3px  rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+.dlbutton a .sub {
+  font: italic 0.8em serif;
+}
+.dlbutton a:hover {
+  background: #ff3019; /* old browsers */
+  background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e6ff', endColorstr='#8da8d7',GradientType=0 ); /* ie */
+}
+
+
+/* Layout for mobile version */
+
+@media handheld, only screen and (max-width: 767px) {
+
+.examplecontainer {
+
+body {
+
+}
+
+}
+
+
+/* Provide higher res assets for iPhone 4 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+.download {
+background: url(../img/downarrow@2x.png) no-repeat;
+background-size: 27px 28px;
+}
+*/
+
+}
