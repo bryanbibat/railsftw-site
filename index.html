@@ -42,9 +42,10 @@
     </div>
     <div class='container blueband'>
       <div class='row'>
-        <div class='tencol last'>
+        <div class='twelvecol last'>
           <h2>
             A minimal, yet complete, Ruby on Rails installer for Windows.
+            <br/>
             <span class='subheader'>
               Because we know that you'd rather spend time
               <strong>working</strong>
@@ -54,7 +55,6 @@
             </span>
           </h2>
         </div>
-        <div class='twocol last'></div>
       </div>
       <div class='row'>
         <div class='fivecol dlbutton'>
@@ -102,7 +102,7 @@
           </p>
           <ul>
             <li>at coding workshops in schools that use Windows as their primary OS</li>
-            <li>in Rails courses on computer labs with Windows machines that have strict network settings preventing the use of RubyGems' automatic download feature</li>
+            <li>in Rails courses on computer labs with Windows machines that have strict network settings preventing Bundler from downloading gems</li>
             <li>when a friend wants see what Rails is all about but can't afford to spend money on a Mac, nor spend time setting up Linux</li>
             <li>
               those days when you don't feel like waiting for the
@@ -114,7 +114,38 @@
           </ul>
         </div>
       </div>
+      <div class='row'>
+        <div class='twelvecol last'>
+          <h2>Installation and Usage</h2>
+          <ol>
+            <li>Download and install.</li>
+            <li>Open "<code>RailsFTW &raquo; Command Prompt with Ruby and Rails</code>"</li>
+            <li>Create an app using the "<code>rails new</code>" command e.g.:
+            <pre>
+    C:\Users\user&gt; rails new testapp
+            </pre>
+            To create a new app using MySQL instead of SQLite, use "<code>-d mysql</code>" e.g.:
+            <pre>
+    C:\Users\user&gt; rails new testapp -d mysql
+            </pre>
+            You can also skip the initial bundle install (if the training site doesn't have good internet) via "<code>-B</code>" e.g.:
+            <pre>
+    C:\Users\user&gt; rails new testapp -B
+            </pre>
+            </li>
+            <li>Unblock the firewall alert the will pop up the first time Ruby accesses the network (e.g. running <code>rails server</code>)</li>
+          </ol>
+        </div>
+      </div>
 
+      <div class='row'>
+        <div class='twelvecol last'>
+          <h2>Gotchas</h2>
+          <p>Installing to a path with directories with spaces or non-ASCII characters in their names (e.g. <code>C:\Users\John Doe\RailsFTW\</code>) may cause unexpected problems.</p>
+          <p>Windows 8 users may encounter problems with the built-in JavaScript runtime. I've posted a <a href="http://blog.bryanbibat.net/2013/09/02/additional-steps-for-railsinstaller-in-windows-8/">solution using NodeJS</a> for this problem over at my blog.</p>
+          <p>This installer doesn't include the RubyInstaller DevKit so it will not be able to install gems that require compilation of native extensions. Head over to the <a href="http://rubyinstaller.org/add-ons/devkit/">RubyInstaller site</a> and download and install the appropriate DevKit if you need to teach more advanced lessons.</p>
+        </div>
+      </div>
       <div class='row'>
         <div class='twelvecol last'>
           <h2>Recommended Links</h2>

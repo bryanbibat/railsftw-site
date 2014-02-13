@@ -105,6 +105,13 @@ padding-top:20px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e6ff', endColorstr='#8da8d7',GradientType=0 ); /* ie */
 }
 
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+ol li {
+  margin-left: 20px;
+}
 
 /* Layout for mobile version */
 
@@ -131,3 +138,4 @@ background-size: 27px 28px;
 */
 
 }
+
